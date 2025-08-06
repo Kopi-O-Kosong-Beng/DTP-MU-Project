@@ -41,11 +41,14 @@ cd LAST_DTP
 ### 2. Create and activate a virtual environment
 
 ```bash
-python3 -m venv .venv
-# macOS/Linux
+# Install virtualenv (to your user site)
+pip3 install --user virtualenv
+
+# Create the env
+~/.local/bin/virtualenv .venv
+
+# Activate it
 source .venv/bin/activate
-# Windows (PowerShell)
-.\.venv\Scripts\Activate.ps1
 ```
 
 ### 3. Install dependencies
