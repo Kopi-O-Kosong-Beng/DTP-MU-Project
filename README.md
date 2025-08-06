@@ -11,19 +11,23 @@ A Streamlit-based web app for exploring and forecasting CO₂ emissions per capi
 ## File Structure
 
 ```bash
+LAST_DTP/
 your-project/
-├── app.py                   # Entrypoint (Home page)
-├── data_service.py          # Data loading & ML model logic
-├── utils.py                 # Utility functions (formatting, validation)
+├── app.py
+├── case_service.py         # Load & filter merged data for case studies
+├── data_service.py         # Fit & apply state-specific regression models
 ├── assets/
-│   └── future.png           # App picture
-├── pages/                   # Streamlit multipage directory
-│   ├── 02_Case_Studies.py   # Case studies
-│   ├── 03_Prediction.py     # Prediction interface
-│   └── 04_HASS_Reflection.py# Qualitative reflection
-├── requirements.txt         # Python dependencies
-├── README.md                # This file
-└── .gitignore               # Local ignores (e.g. .venv/)
+│   ├── All main data (1998 to 2023).xlsx   # Input data for charts & models
+├── pages/                    # Streamlit multipage directory
+│   ├── 02_case_studies.py    # Case studies page
+│   ├── 03_prediction.py      # Prediction interface
+│   └── 04_hass_reflection.py # Qualitative reflection page
+├── tests/
+│   ├── test_data_service.py
+│   └── test_case_service.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ## Quick Start
@@ -31,7 +35,7 @@ your-project/
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/Kopi-O-Kosong-Beng/DTP-MU-Project/tree/main
 cd co2-explorer
 ```
 

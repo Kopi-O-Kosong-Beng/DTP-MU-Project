@@ -20,7 +20,7 @@ with col1:
     st.subheader("Environmental Justice")
     st.markdown(
         """
-        > **Environmental justice** is about ensuring that all people—regardless of race, color, national origin, or income—have equal protection from environmental harms and equal access to environmental benefits.
+        > **Environmental justice** is about ensuring that all people, regardless of race, color, national origin, or income, have equal protection from environmental harms and equal access to environmental benefits.
         > 
         > — Dr. Robert Bullard, “Father of Environmental Justice”
         """
