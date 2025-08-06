@@ -35,7 +35,7 @@ LAST_DTP/
 
 ```bash
 git clone https://github.com/Kopi-O-Kosong-Beng/DTP-MU-Project/tree/main
-cd co2-explorer
+cd LAST_DTP
 ```
 
 ### 2. Create and activate a virtual environment
