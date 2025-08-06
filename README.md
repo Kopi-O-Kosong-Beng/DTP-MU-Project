@@ -8,7 +8,7 @@ A Streamlit-based web app for exploring and forecasting CO₂ emissions per capi
 * **Prediction**: Interactive forecasting based on coal & natural gas production, per capita income, urbanization, and renewable energy usage.
 * **HASS Reflection**: Social and ethical analysis on environmental justice and responsibility.
 
-## 📂 File Structure
+## File Structure
 
 ```bash
 LAST_DTP/
@@ -29,7 +29,7 @@ LAST_DTP/
 └── .gitignore
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repository
 
@@ -66,7 +66,7 @@ streamlit run app.py
 
 Open your browser at the URL printed (usually [http://localhost:8501](http://localhost:8501/)).
 
-## 🧪 Testing
+## Testing
 
 Run unit tests with pytest:
 
@@ -74,19 +74,19 @@ Run unit tests with pytest:
 pytest
 ```
 
-## 📄 Usage
+## Usage
 
 * **Home**: Intro & navigation.
 * **Case Studies**: View historical CO₂ trends for WY, ND, AK.
 * **Prediction**: Input your parameters and click **Run Prediction**.
 * **HASS Reflection**: Explore environmental justice themes.
 
-## 📦 Deployment
+## Deployment
 
 * Suitable for platforms supporting Python & Streamlit (Heroku, Streamlit Cloud, Azure).
 * Ensure `assets/` and `.env` (if any secrets) are included in deployment.
 
-## 🤝 Contribution
+## Contribution
 
 Contributions and improvements are welcome:
 
