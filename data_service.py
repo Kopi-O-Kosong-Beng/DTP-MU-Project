@@ -1,12 +1,10 @@
 """
 Data service module for fitting state‐specific linear regression models
-and predicting CO₂ per capita using NumPy. Also provides plotting helpers.
+and predicting CO₂ per capita using NumPy.
 """
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # ────────────────────────────────────────────────────────
 # Module‐level cache for the merged dataset
@@ -103,11 +101,11 @@ def predict_co2(
 
     Args:
         state_code (str): "WY", "ND", or "AK" (case-insensitive).
-        renewable_energy (float): Renewable energy consumption (%).
-        coal_elec (float): Coal electricity consumption.
-        gas_elec (float): Natural gas electricity consumption.
-        pce_per_capita (float): Personal consumption expenditure per capita.
-        urban_pop (float): Estimated urban population (%).
+        renewable_energy (float): Renewable energy consumption (Billion Btu/yr).
+        coal_elec (float): Coal electricity consumption (short tons/yr).
+        gas_elec (float): Natural gas consumption (thousand cubic feet/yr).
+        pce_per_capita (float): Personal consumption expenditure per capita (USD).
+        urban_pop (float): Estimated urban population (number of people).
 
     Returns:
         float: Predicted CO₂ per capita.

@@ -1,6 +1,5 @@
 """
 Prediction page for CO₂ emissions per capita using state‐specific linear models.
-Includes a feedback form and displays all past user feedback.
 """
 
 import streamlit as st
@@ -18,7 +17,6 @@ st.title("CO₂ Emission Prediction")
 st.markdown(
     """
     Select a state model and enter its key drivers below to forecast CO₂ emissions per capita.
-    After seeing your result, please leave your name and a quick note on what you think of it.
     """
 )
 
@@ -108,10 +106,10 @@ if st.sidebar.button("Run Prediction"):
     st.dataframe(
         pd.DataFrame({
             "State": [state],
-            "Renewable Energy (%)": [renewable],
-            "Coal Electricity Consumption": [coal],
-            "Natural Gas Electricity Consumption": [gas],
+            "Renewable Energy (Billion Btu/yr)": [renewable],
+            "Coal Electricity Consumption (short tons/yr)": [coal],
+            "Natural Gas Consumption (thousand cu ft/yr)": [gas],
             "PCE per Capita (USD)": [pce],
-            "Estimated Urban Population (%)": [urban]
+            "Estimated Urban Population (people)": [urban]
         })
     )
