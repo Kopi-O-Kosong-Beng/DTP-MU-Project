@@ -93,4 +93,4 @@ Ten tests cover data loading, column contracts, series filtering/sorting, model 
 
 ## Team & attribution
 
-Built for SUTD's Design Thinking Project III by a 5-person team. I was one of two core modelers: I originated the evaluation methodology (adjusted R² and RMSE-variant scoring), worked hands-on in Python and Excel, and led the model-strengths analysis in the final presentation. Full role breakdown on the [case study page](https://zhifeng-portfolio.vercel.app/projects/co2-modeling).
+Built for SUTD's Design Thinking Project III by a 5-person team. I was one of two core modelers and the developer of this Streamlit app: together with my teammate I gathered the dataset and built the regression models in Excel — he wrote the core math-algorithm code, and I did the final checking and integrated the models into the app. I also originated the evaluation methodology (adjusted R² and RMSE-variant scoring), wrote the report, and led the model-strengths analysis in the final presentation. Full role breakdown on the [case study page](https://zhifeng-portfolio.vercel.app/projects/co2-modeling).
